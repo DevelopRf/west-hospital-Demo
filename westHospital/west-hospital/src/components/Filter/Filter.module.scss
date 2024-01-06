@@ -1,0 +1,26 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: auto calc(1260px / 2 - 56px);
+
+    select,
+    input {
+        padding: 8px 12px;
+        background-color: #ededed;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: inherit;
+        outline: none;
+        &:focus{
+            border-color: #4fb6a8;
+        }
+    }
+    
+    select {
+        width: 40%;
+        color: #888888;
+    }
+    input {
+        width: 100%;
+    }
+}

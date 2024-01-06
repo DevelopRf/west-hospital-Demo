@@ -1,0 +1,49 @@
+.card .innerCard {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 187px auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+.card .innerCard .image {
+  width: 187px;
+  height: 217px;
+}
+.card .innerCard .image a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .innerCard .info .title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #464646;
+  margin: 0 0 5px;
+}
+.card .innerCard .info .profession {
+  font-size: 17.2px;
+  font-weight: 300;
+  line-height: 185.52%;
+  margin: 0 0 10px;
+}
+.card .innerCard .info .text {
+  line-height: 24px;
+  height: 120px;
+  overflow: hidden;
+}
+.card .innerCard .info .btn {
+  text-align: right;
+}
+.card .innerCard .info .btn a {
+  font-size: 18px;
+  color: #4fb6a8;
+}
+.card .innerCard .info .btn a .iconRight {
+  padding: 0 0 0 12px;
+}/*# sourceMappingURL=Card.module.css.map */

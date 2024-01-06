@@ -1,0 +1,42 @@
+header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+header .wrapper {
+  display: grid;
+  align-items: center;
+  height: 80px;
+  grid-template-columns: 107px 85px;
+  justify-content: space-between;
+}
+header .wrapper .logo {
+  width: 107px;
+  height: 80px;
+}
+header .wrapper .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .wrapper .contact a, header .wrapper .contact p {
+  color: #4fb6a8;
+}
+header .wrapper .contact a {
+  font-size: 28.8px;
+  font-weight: bolder;
+  display: inline-block;
+  line-height: 36px;
+}
+header .wrapper .contact a:hover {
+  color: #3f9286;
+}
+header .wrapper .contact p {
+  line-height: 14px;
+  text-align: right;
+}/*# sourceMappingURL=Header.module.css.map */
