@@ -31,7 +31,7 @@ const Detail = () => {
     return (
         <>
         {
-            detail ? <DetailDoctor data={detail} /> : "LOADING..."
+            <DetailDoctor data={detail} />
         }
         </>
     )

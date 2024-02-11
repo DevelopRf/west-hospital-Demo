@@ -12,32 +12,33 @@ import { DoctorContext } from "../../context/DoctorContext"
 
 function Card() {
 
-    const { filteredDoctors, term} = useContext(DoctorContext)
+    const { doctors, filteredDoctors, term } = useContext(DoctorContext)
 
-const searchArr = filteredDoctors && filteredDoctors.filter(item =>
-    {
+    filteredDoctors && console.log(filteredDoctors);
+
+    const searchArr = filteredDoctors && filteredDoctors.filter(item => {
         return item.name.toLowerCase().includes(term.toLowerCase())
     })
-    
+
     return (
         <>
             {
                 searchArr && searchArr.map(item => {
-                    
+                    const { id, name, profession, about, image } = item
                     return (
-                        <div key={item.id} className={`${styles.card}`} data-aos="fade-right" data-aos-duration="500">
+                        <div key={id} className={`${styles.card}`} data-aos="fade-right" data-aos-duration="500">
                             <div className={`${styles.innerCard}`}>
                                 <div className={`${styles.image}`}>
-                                    <Link to={`${item.id}`}>
-                                        <img src={item.image} alt="" />
+                                    <Link to={`${id}`}>
+                                        <img src={image} alt="" />
                                     </Link>
                                 </div>
                                 <div className={`${styles.info}`}>
-                                    <h3 className={`${styles.title}`}>{item.name}</h3>
-                                    <h4 className={`${styles.profession}`}>{item.profession}</h4>
-                                    <div className={`${styles.text}`}>{item.about}</div>
+                                    <h3 className={`${styles.title}`}>{name}</h3>
+                                    <h4 className={`${styles.profession}`}>{profession}</h4>
+                                    <div className={`${styles.text}`}>{about}</div>
                                     <div className={`${styles.btn}`}>
-                                        <Link to={`${item.id}`}>Ətraflı
+                                        <Link to={`${id}`}>Ətraflı
                                             <FontAwesomeIcon icon={faChevronRight} className={`${styles.iconRight}`} />
                                         </Link>
                                     </div>

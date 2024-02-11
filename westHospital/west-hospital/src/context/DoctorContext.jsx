@@ -5,12 +5,11 @@ export const DoctorContext = createContext()
 export const DoctorProvider = ({ children }) => {
 
     const [doctors, setDoctors] = useState(null)
-    const [departments, setDepartments] = useState(null)
     const [filteredDoctors, setFilteredDoctors] = useState(null)
+    const [departments, setDepartments] = useState(null)
     const [term, setTerm] = useState("")
     const [select, setSelect] = useState("")
-
-
+    
     useEffect(() => {
         const getDoctors = async () => {
             const res = await fetch("http://localhost:3000/doctors")
@@ -28,7 +27,7 @@ export const DoctorProvider = ({ children }) => {
     }, [])
 
     return (
-        <DoctorContext.Provider value={{ term, setTerm, select, setSelect, doctors, departments, filteredDoctors, setFilteredDoctors }}>
+        <DoctorContext.Provider value={{term, setTerm, select, doctors, setSelect, departments, filteredDoctors, setFilteredDoctors}}>
             {children}
         </DoctorContext.Provider>
     )

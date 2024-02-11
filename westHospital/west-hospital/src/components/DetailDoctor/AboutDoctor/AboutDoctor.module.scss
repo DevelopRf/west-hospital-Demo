@@ -1,18 +1,65 @@
-.info {
-    h2 {
-        font-size: 42px;
-        font-weight: 600;
-    }
+.detailDoctor {
+    margin: 130px 0 0;
 
-    h3 {
-        font-size: 27px;
-        font-weight: 300;
-        padding: 8px 0;
-    }
+    .wrapper {
 
-    p {
-        font-family: Inter, sans-serif;
-        font-size: 16px;
-        line-height: 30px;
+
+        .detailCards {
+            display: grid;
+            grid-template-columns: 416px auto;
+            column-gap: 24px;
+
+            .detailCard {
+                
+
+                &:first-child {
+                    .image {
+                        height: 530px;
+
+                        img {
+                            border-radius: 16px;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    color: #212529;
+                    h2 {
+                        font-size: 42px;
+                        font-weight: 600;
+                        line-height: 1.2;
+                    }
+
+                    h3 {
+                        font-size: 27px;
+                        font-weight: 200;
+                        padding: 8px 0;
+                    }
+
+                    p {
+                        font-family: Inter, sans-serif;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+
+                .education {
+                    h2 {
+                        font-size: 24px;
+                        line-height: 40px;
+                        font-weight: 600;
+                        color: #4fb6a8;
+                    }
+
+                    p {
+                        line-height: 40px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
     }
 }
