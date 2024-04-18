@@ -1,0 +1,49 @@
+.detailDoctor {
+    margin: 120px 0 0;
+
+
+    .detailCard {
+        .image {
+            height: 530px;
+
+            img {
+                border-radius: 16px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        color: #212529;
+
+        p{
+            line-height: 40px;
+        }
+
+        h2 {
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: 27px;
+            font-weight: 300;
+            padding: 8px 0;
+        }
+
+        .education {
+            h2 {
+                font-size: 24px;
+                line-height: 40px;
+                color: #4fb6a8;
+            }
+
+            p {
+                font-weight: 600;
+            }
+        }
+    }
+
+
+}
