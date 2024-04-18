@@ -1,0 +1,14 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/extend.scss";
+
+.departments {
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: 40%;
+    }
+
+    select {
+        @extend %select-input;
+    }
+}

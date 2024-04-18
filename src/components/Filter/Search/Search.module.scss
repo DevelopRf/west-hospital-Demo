@@ -1,0 +1,27 @@
+@import "../../../styles/partials/variables.scss";
+@import "../../../styles/partials/extend.scss";
+
+.searchDoctor {
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 992px) {
+        width: calc(1260px / 2 - 56px);
+    }
+
+    input{
+        @extend %select-input;
+    }
+
+    svg {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: $clr_primary;
+
+        &:hover {
+            cursor: text;
+        }
+    }
+}

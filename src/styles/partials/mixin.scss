@@ -1,7 +1,15 @@
-@mixin Font ($f-s:null, $f-w:null, $l-h:null, $l-s: null)
-{
+@mixin Font ($f-s: null, $f-w: null, $l-h: null, $l-s: null) {
     font-size: $f-s;
     font-weight: $f-w;
     line-height: $l-h;
     letter-spacing: $l-s;
+}
+
+@mixin Flex ($j-c: null, $a-i: null, $c-g: null, $r-g: null, $f-d: null) {
+    display: flex;
+    justify-content: $j-c;
+    align-items: $a-i;
+    column-gap: $c-g;
+    row-gap: $r-g;
+    flex-direction: $f-d;
 }

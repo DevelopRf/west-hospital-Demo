@@ -1,0 +1,15 @@
+%select-input {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #ededed;
+    color: $clr_text;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+
+    &:focus {
+        border-color: $clr_primary;
+    }
+}

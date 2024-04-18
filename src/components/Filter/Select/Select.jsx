@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react"
-import Option from "./Option/Option"
 import { DoctorContext } from "../../../context/DoctorContext"
+import styles from "./Select.module.scss";
 
 const Select = () => {
     const { select, term, doctors, departments, setFilteredDoctors, setSelect } = useContext(DoctorContext)
@@ -24,9 +24,13 @@ const Select = () => {
     }
 
     return (
-        <select name="doctors" id="doctors" onChange={selectChange}>
-            <Option />
-        </select>
+        <div className={styles.departments}>
+            <select name="doctors" id="doctors" onChange={selectChange}>
+                <option value="all-doctors">Bütün həkimlər</option>
+                {departments && departments.map(item => <option key={item.id} value={item.name}>{item.name}</option>
+                )}
+            </select>
+        </div>
     )
 }
 

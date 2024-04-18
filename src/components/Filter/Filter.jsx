@@ -1,22 +1,17 @@
-import { useContext, useState, useEffect } from "react"
-import styles from "./Filter.module.scss"
-import Search from "./Search/Search"
+import SearchDoctor from "./Search/Search"
 import Select from "./Select/Select"
-import { DoctorContext } from "../../context/DoctorContext"
 
 const Filter = () => {
 
     return (
-        <>
-            <div className={`${styles.wrapper}`}>
-                <div>
-                    <Select />
-                </div>
-                <div>
-                    <Search />
-                </div>
+        <div className="row row-gap-3">
+            <div className="col-lg-6 d-flex justify-content-end order-lg-2">
+                <SearchDoctor />
             </div>
-        </>
+            <div className="col-lg-6 d-flex justify-content-start order-lg-1">
+                <Select />
+            </div>
+        </div>
     )
 
 }
