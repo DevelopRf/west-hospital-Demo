@@ -9,7 +9,7 @@ const Header = () => {
                         <div className={`${styles.logo}`}><Link to="/"><img src="./src/assets/logo.svg" alt="" /></Link></div>
                         <div className={`${styles.contact}`}>
                             <p>zəng et</p>
-                            <a href="">*7606</a>
+                            <a href="tel: *7606">*7606</a>
                         </div>
                     </div>
                 </div>

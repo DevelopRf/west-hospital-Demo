@@ -1,8 +1,9 @@
 import styles from "../AboutDoctor/AboutDoctor.module.scss"
 import "@fontsource/poppins";
-import "@fontsource/poppins/400.css";
+import '@fontsource/poppins/300.css'
+import '@fontsource/inter/300.css'
+import '@fontsource/poppins/600.css'
 import "@fontsource/inter"
-import "@fontsource/inter/400.css"
 const AboutDoctor = ({ Data }) => {
 
     const { name, profession, about, image, info1, info2, info3 } = Data
