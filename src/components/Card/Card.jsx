@@ -32,8 +32,8 @@ function Card() {
                             </div>
                             <div className={styles.info}>
                                 <div className={styles.content}>
-                                    <h3 className={styles.title}>{name}</h3>
-                                    <h4 className={styles.profession}>{profession}</h4>
+                                    <h4>{name}</h4>
+                                    <h5>{profession}</h5>
                                     <div className={styles.text}>{about}</div>
                                 </div>
                                 <div className={styles.btn}>

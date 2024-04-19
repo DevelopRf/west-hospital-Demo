@@ -4,7 +4,10 @@
 
     .detailCard {
         .image {
-            height: 530px;
+            height: 750px;
+            @media (min-width: 992px) {
+                height: 530px;
+            }
 
             img {
                 border-radius: 16px;
